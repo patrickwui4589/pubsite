@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <title>Offre exclusive</title>
+  <style>
+    :root{--h:50px}
+    body{margin:0;font-family:Inter,Roboto,Arial,sans-serif;background:#ffffff}
+    .banner{
+      width:100%;
+      height:var(--h);
+      min-height:50px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-sizing:border-box;
+      padding:6px;
+      background:linear-gradient(90deg,#ffcc00,#ff9900);
+    }
+    .banner a{color:#111;text-decoration:none;font-weight:700}
+    .container{max-width:900px;margin:0 auto;padding:8px}
+    /* option pour mob : image + text */
+    .content{display:flex;align-items:center;gap:12px}
+    .thumb{width:40px;height:40px;border-radius:6px;background:url('https://via.placeholder.com/80') center/cover}
+    .title{font-size:15px}
+    /* petit footer */
+    .small{font-size:12px;color:#444;margin-top:6px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="banner" role="banner" aria-label="Offre sponsorisée">
+    <div class="container">
+      <div class="content">
+        <div class="thumb" aria-hidden="true"></div>
+        <div>
+          <div class="title">
+            <a id="cta" href="https://example-affiliate.com/?utm_source=myapp&utm_medium=banner" target="_blank" rel="noopener">
+              🔥 Offre exclusive : -50% maintenant — Clique ici !
+            </a>
+          </div>
+          <div class="small">Offre partenaire • 18+ • Conditions sur le site</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ******** OPTION: code réseau publicitaire Web (ex: PropellerAds / Adsterra)
+       Remplace `NETWORK_SCRIPT_URL` par le script que te donne la régie.
+       Exemple : <script async src="https://example-network.com/ad.js"></script>
+       Puis insère le div target: <div id="ad-banner"></div>
+  -->
+  <!-- Ex: -->
+  <!-- <script async src="https://static.propellerads.com/ad.js"></script> -->
+  <!-- <div id="ad-banner"></div> -->
+
+  <!-- Optional: simple impression ping to your analytics endpoint -->
+  <script>
+    // Ping your server to record impression (optional)
+    (function(){
+      try {
+        fetch('https://your-tracking-server.example.com/impression', {
+          method:'POST',
+          headers:{'Content-Type':'application/json'},
+          body: JSON.stringify({slot:'banner_top', ts: Date.now(), source:'myapp'})
+        }).catch(()=>{/* ignore */});
+      } catch(e){}
+    })();
+  </script>
+</body>
+</html>
