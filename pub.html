@@ -2,36 +2,28 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
+  <title>Publicité Mobile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pub Adsterra</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background-color: #222;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      background-color: transparent;
     }
-    #ad-container {
+    iframe {
+      border: none;
       width: 100%;
-      max-width: 468px; /* largeur standard bannière responsive */
-      height: 100px;      /* hauteur fixe ou adapte */
+      height: 100%;
     }
   </style>
 </head>
 <body>
-  <div id="ad-container">
-    <!-- 🔹 Script Adsterra Smart Link -->
-    <script type="text/javascript">
-      (function() {
-        var s = document.createElement('script');
-        s.src = "https://www.effectivegatecpm.com/d5p2nae7?key=c0c5466ad66fa7e69eb6186d2f718d4c";
-        s.async = true;
-        document.getElementById('ad-container').appendChild(s);
-      })();
-    </script>
-  </div>
+  <!-- Smart Link Adsterra -->
+  <iframe src="https://www.effectivegatecpm.com/d5p2nae7?key=c0c5466ad66fa7e69eb6186d2f718d4c"
+          width="320"
+          height="50"
+          scrolling="no"
+          frameborder="0">
+  </iframe>
 </body>
 </html>
