@@ -1,54 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Offre exclusive - Gagne des récompenses 🎁</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicité</title>
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      background-color: #222;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      background: linear-gradient(135deg, #ff8c00, #ffcc00);
-      color: #fff;
-      text-align: center;
     }
-    .container {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-    a {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 24px;
-      background: #00bcd4;
-      color: #fff;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: 0.3s;
-    }
-    a:hover {
-      background: #0097a7;
+    #ad-container {
+      width: 100%;
+      max-width: 468px; /* largeur standard bannière responsive */
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>🎯 Offre exclusive pour toi !</h2>
-    <p>Découvre des jeux, applis et récompenses spéciales ici 👇</p>
-    <a href="https://www.effectivegatecpm.com/d5p2nae7?key=c0c5466ad66fa7e69eb6186d2f718d4c" 
-       target="_blank" 
-       rel="noopener noreferrer">
-       Ouvrir l'offre 🔥
-    </a>
+  <div id="ad-container">
+    <!-- 🔹 Adsterra Smart Link -->
+    <script type="text/javascript">
+      (function(){
+        var s = document.createElement('script');
+        s.src = "https://www.effectivegatecpm.com/d5p2nae7?key=c0c5466ad66fa7e69eb6186d2f718d4c";
+        s.async = true;
+        document.getElementById('ad-container').appendChild(s);
+      })();
+    </script>
   </div>
 </body>
 </html>
-
